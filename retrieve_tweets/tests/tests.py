@@ -5,3 +5,9 @@ def test():
     if len(tweets) != 10:
         raise AssertionError('tweets obtained != tweets retrieved')
     return
+
+def test_trend():
+	tweets = get_tweets.get_trends('2508428')
+    if len(tweets) != 10:
+        raise AssertionError('tweets obtained != tweets retrieved')
+    return
