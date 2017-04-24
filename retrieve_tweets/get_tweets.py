@@ -26,4 +26,4 @@ def get_trends(where_on_earth):
 
         tweets = api.trends_place(id = where_on_earth)
 
-        return [tweet.text for tweet in tweets]
+        return [tweet for tweet in tweets]
